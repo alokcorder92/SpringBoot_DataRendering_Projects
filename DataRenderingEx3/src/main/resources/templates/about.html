@@ -1,0 +1,17 @@
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<title>About Page</title>
+	</head>
+	 <body>
+		<h1>Data Readering Example3</h1>
+		
+		<div th:each="student:${students}">
+		    
+		Name:<span th:text="${student.name}"></span><br/>
+		Aage:<span th:text="${student.age}"></span><br/>
+		Ph no:<span th:text="${student.phno}"></span><br/>
+		Address:<span th:text="${student.address}"></span>
+		<hr/>
+		</div>
+	 </body>
+</html>
